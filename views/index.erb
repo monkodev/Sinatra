@@ -1,3 +1,6 @@
-<% if @nombre %>
-	<h1> HOLA <%= @nombre  %> ! </h1>
-<% end %>
+<h1>Hola, dime a quien saludar</h1>
+<form action="/obj" method="post">
+	<input type="text" name="verbo">
+	<input type="submit" value="Submit">
+</form>
+
