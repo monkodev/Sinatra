@@ -9,7 +9,8 @@ end
 
 post '/sum' do 	
 	@resultado=(params[:resultado].to_i)+1
-	erb :index		 	
+	erb :index	
+	redirect ('/')	 	
 end
 
 
