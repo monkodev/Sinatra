@@ -1,11 +1,8 @@
-<h1>Hola</h1>
-<% for @i in 1..50 %>
-   <% if (@i.to_i % 2).equal? 0 %>
-   <p><%= @i %> Soy par! </p>
-   	<% else %>
-   	<p><%= @i %> Soy impar! </p>
-   <% end %>
-<% end %>
+<h1>Mi cuenta es: <%= @resultado %> </h1>
+<form action="/sum" method="post">
+  <input type="Submit" value="Suma!!">
+</form>
+
 
 
 

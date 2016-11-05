@@ -1,16 +1,16 @@
 require 'sinatra'
 
+
 get '/' do
+	@resultado=params[:resultado].to_i
 	erb :index
 end
 
-get '/makers/:nombre' do
-	
-		<<-HTML
-			<h1>Hola #{params[:nombre].capitalize!}!</h1>	
-		HTML
+
+post '/sum' do 	
+	@resultado=(params[:resultado].to_i)+1
+	erb :index		 	
 end
 
-post '/obj' do
-	"Hola! #{params[:verbo]}"
-end
+
+
