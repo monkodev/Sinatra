@@ -1,16 +1,16 @@
 require 'sinatra'
 
-
+@resultado=0
 get '/' do
 	@resultado=params[:resultado].to_i
 	erb :index
+	
 end
 
 
-post '/sum' do 	
-	@resultado=(params[:resultado].to_i)+1
-	erb :index	
-	redirect ('/')	 	
+get '/sum' do 	
+	@resultado=params[:resultado].to_i
+	erb :index		
 end
 
 
