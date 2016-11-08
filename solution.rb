@@ -6,7 +6,8 @@ require 'browser'
 @resultado=0
 get '/' do
 	
-	erb :index
+	browser = Browser.new(:ua => request.user_agent)
+	browser.name
 	
 end
 
