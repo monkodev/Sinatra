@@ -6,8 +6,10 @@ require 'browser'
 @resultado=0
 get '/' do
 	
-	browser = Browser.new(:ua => request.user_agent)
-	browser.name
+	
+	result = request.env['HTTP_USER_AGENT']
+	
+	result
 	
 end
 
