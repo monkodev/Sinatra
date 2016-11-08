@@ -1,8 +1,12 @@
-<h1>Mi cuenta es: <%= @resultado %> </h1>
-<form action="/sum" method="get">
-  <input type="hidden" value="<%= @resultado.to_i + 1 %>" name="resultado">
-  <input type="submit" value="Suma!!">
+<h1>Abuela Sorda</h1>
+<form action="/abuela" method="get">
+ <p>Di algo Abuelita!!</p>
+  <input type="text" name="algo">
+  <input type="submit" value="Dilo!">
 </form>
+
+
+
 
 
 
