@@ -1,4 +1,7 @@
 require 'sinatra'
+require 'browser'
+
+
 
 @resultado=0
 get '/' do
@@ -20,6 +23,11 @@ get '/abuela' do
 		else
 			erb :mijito
 		end	
+end
+
+get '/encabezado' do
+	browser = Browser.new(:ua => request.user_agent)
+	browser.name
 end
 
 
