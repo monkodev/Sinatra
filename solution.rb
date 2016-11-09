@@ -12,10 +12,10 @@ get '/' do
 	if result=="soy un token secreto"
 	
 	
-		"Si lo logramos!"
+		 "Si lo logramos!"
 		
 	else
-		"Sin permiso"
+		 "Sin Permiso"
 	#	puts "#{ request.env }"
 	end
 end
