@@ -1,11 +1,11 @@
 require 'sinatra'
-require 'rack'
+
 
 
 
 @resultado=0
 get '/' do	
-	
+	result=""
 	result = request.env['HTTP_PERMISO']
 	#headers['permiso']==request["permiso"]
 	
