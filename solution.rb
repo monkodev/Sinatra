@@ -9,7 +9,7 @@ get '/' do
 	result = request.env['HTTP_PERMISO']
 	#headers['permiso']==request["permiso"]
 	
-	if result=="soy un token secreto"
+	if result=="soy-un-token-secreto"
 	
 	
 		 "Si lo logramos!"
