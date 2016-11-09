@@ -1,16 +1,23 @@
 require 'sinatra'
-
+require 'rack'
 
 
 
 @resultado=0
-get '/' do
+get '/' do	
+	
+	result = request.env['HTTP_PERMISO']
+	#headers['permiso']==request["permiso"]
+	
+	if result=="soy un token secreto"
 	
 	
-	result = request.env['HTTP_USER_AGENT']
-	
-	result
-	
+		"Si lo logramos!"
+		
+	else
+		"Sin permiso"
+	#	puts "#{ request.env }"
+	end
 end
 
 
